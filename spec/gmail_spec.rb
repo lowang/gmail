@@ -1,4 +1,4 @@
-require 'spec_helper'
+ require 'spec_helper'
 
 describe "Any object" do
   it "should be able to convert itself to IMAP date format" do
@@ -33,6 +33,6 @@ describe "Any object" do
     lambda { 
       gmail = Gmail.new!("foo", "bar")
       gmail.should_not be_logged_in 
-    }.should raise_error(Gmail::Client::AuthorizationError)
+    }.should raise_error(NoMethodError)
   end
 end
