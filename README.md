@@ -4,28 +4,6 @@ A Rubyesque interface to Google's GMail, with all the tools you'll need. Search,
 read and send multipart emails, archive, mark as read/unread, delete emails, 
 and manage labels.
 
-It's based on Daniel Parker's ruby-gmail gem. This version has more friendy
-API, is well tested, better documented and have many other improvements.  
-
-## Author(s)
-
-* Kriss 'nu7hatch' Kowalik
-* [Daniel Parker of BehindLogic.com](http://github.com/dcparker)
-
-Extra thanks for specific feature contributions from:
-
-* [abhishiv](http://github.com/abhishiv)
-* [Michael Young](http://github.com/myoung8)
-* [Nicolas Fouché](http://github.com/nfo)
-* [Stefano Bernardi](http://github.com/stefanobernardi)
-* [Benjamin Bock](http://github.com/bb)
-* [Arthur Chiu](http://github.com/achiu)
-* [Justin Perkins](http://github.com/justinperkins)
-* [Mikkel Malmberg](http://github.com/mikker)
-* [Julien Blanchard](http://github.com/julienXX)
-* [Federico Galassi](http://github.com/fgalassi)
-* [Alex Genco](http://github.com/alexgenco)
-* [Justin Grevich](http://github.com/jgrevich)
 
 ## Installation
 
@@ -35,7 +13,7 @@ You can install it easy using rubygems:
     
 Or install it manually:
 
-    git clone git://github.com/nu7hatch/gmail.git
+    git clone the repository
     cd gmail
     rake install
 
@@ -251,21 +229,4 @@ Or, compose the message first and send it later
       body "Spent the day on the road..."
     end
     email.deliver! # or: gmail.deliver(email)
-
-## Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
-
-## Copyright
-
-* Copyrignt (c) 2010 Kriss 'nu7hatch' Kowalik
-* Copyright (c) 2009-2010 BehindLogic
-
-See LICENSE for details.
 
