@@ -18,7 +18,7 @@ module Gmail
         raise_errors and raise AuthorizationError, "Couldn't login to given GMail account: #{username}"
       end
 
-      def smtp_settings
+     def smtp_settings
         [:smtp, {
            :address => GMAIL_SMTP_HOST,
            :port => GMAIL_SMTP_PORT,
