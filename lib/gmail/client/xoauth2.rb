@@ -25,9 +25,7 @@ module Gmail
            :port => GMAIL_SMTP_PORT,
            :domain => mail_domain,
            :user_name => username,
-           :password => {
-             :oauth2_token => oauth2_token
-           },
+           :password => oauth2_token,
            :authentication => :xoauth2,
            :enable_starttls_auto => true
        }]
